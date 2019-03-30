@@ -5,7 +5,7 @@ $(document).ready(function() {
   function displayBreeds() {
     var x = $(this).data("search");
     // console.log(x);
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=Me3xyN0NT8iV1G0fB9r2a0Hd2h69VQ62&limit=10";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + x + "&api_key=Me3xyN0NT8iV1G0fB9r2a0Hd2h69VQ62&limit=12";
     // console.log(queryURL);
     // Ajax calling function/append to html
     $.ajax({
@@ -29,7 +29,10 @@ $(document).ready(function() {
           showImage.attr("data-animate", defaultAnimation);
           showDiv.append(p);
           showDiv.append(showImage);
-          $("#gifResults").prepend(showDiv);
+
+          $("#gifResults")
+            .find(".row")
+            .prepend(showDiv);
         }
     });
   }
