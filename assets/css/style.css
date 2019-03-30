@@ -1,0 +1,46 @@
+label {
+	font-size: 18px;
+}
+
+#breeds {
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#formSearch {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#gifResults {
+	clear: both;
+	display: inline;
+	flex-wrap: wrap;
+}
+
+.dogGiphy {
+	padding: 2px;
+	width: 80%;
+}
+#header {
+	background-color: #e50914;
+	color: #ffffff;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 15px;
+
+}
+
+@media only screen and (max-width: 527px) {
+  .questions {
+    font-size: 1.5rem;
+    font-weight: normal;
+    /* color: black; */
+  }
+  #answers {
+    /* color: black; */
+   font-weight: normal;
+ }
+}

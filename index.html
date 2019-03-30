@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Giftastic HW</title>
+</head>
+<body>
+<div class="container">
+
+    <div class="jumbotron" id="header">
+        <h1>GoodestBoy</h1>
+    </div>
+
+  <div class="row">
+    <div class="col-lg-12">
+        <!-- search panel -->
+        <div class="panel panel-default">
+            <div class="panel panel-heading">
+                <h3 class="panel-title">Search</h3>
+            </div>
+            <div class="panel-body">
+            <form class="form-inline" id="formSearch" role="form">
+              <div class="form-group">
+                <label for="search">Search for a breed</label>
+                <input type="text" class="form-control" id="search">
+              </div>
+            <button type="submit" class="btn btn-primary" id="addBreed">Search</button>
+            </form>
+            <div class="row">
+              <div class="container">
+                <div class="btn-group">
+                    <button class="btn btn-primary" id="breeds" data-search="Golden Retriever">Golden Retriever</button>
+                    <button class="btn btn-primary" id="breeds" data-search="Australian Shepherd">Australian Shepherd</button>
+                    <button class="btn btn-primary" id="breeds" data-search="Corgi">Corgi</button>
+                    <button class="btn btn-primary" id="breeds" data-search="Pitbull dog">Pitbull</button>
+                  <div id="myButtons"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+ </div>
+
+<div class="row">
+  <div class="container">
+    <span><div id="gifResults"></div></span>
+  </div>
+</div>
+
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+
+
+</body>
+</html>
